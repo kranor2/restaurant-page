@@ -1,0 +1,54 @@
+:root {
+    --blossom: #e7fcd9;
+    --koi-red: #d83b54;
+    --koi-gray: #c6d1bf;
+}
+
+@font-face {
+    font-family: "Catboo";
+    src: url("./Catboo.woff") format("woff"),
+        url("./Catboo.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 400;       
+}
+
+@font-face {
+    font-family: "CreamDEMO";
+    src: url("./cream-DEMO.woff") format("woff"),
+        url("./cream-DEMO.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(./koi-fish_bkgd.gif);
+}
+
+nav {
+    margin: 0;
+    background-color: rgba(249, 253, 250, 0.6);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1, h2, p, button {
+    font-family: "CreamDEMO", "Trebuchet MS", sans-serif;
+}
+
+h3 {
+    font-family: "Catboo", "Helvetica", sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-text {
+    font-family: "Catboo", "Helvetica", sans-serif;
+    font-size: 3.25rem;
+    color: var(--koi-red);
+}
