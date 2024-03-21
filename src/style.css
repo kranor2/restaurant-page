@@ -3,6 +3,8 @@
     --koi-red: #d83b54;
     --koi-gray: #c6d1bf;
     --koi-red-hover: #b42447;
+    --koi-yellow: #cdaa16;
+    --lilypad: rgba(14, 109, 84, 0.3);
 }
 
 @font-face {
@@ -53,6 +55,8 @@ h1, h2, p, button {
 
 h3 {
     font-family: "Catboo", "Helvetica", sans-serif;
+    font-size: 2rem;
+    color: var(--koi-red);
 }
 
 a {
@@ -61,9 +65,16 @@ a {
     margin: 5px;
 }
 
+p {
+    color: var(--blossom);
+}
+
 .content {
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
+    overflow: scroll;
+    justify-items: center;
+    align-items: center;
 }
 
 .tab {
@@ -89,6 +100,69 @@ a {
 }
 
 .hero {
+    margin: 2vw;
+    padding: 3.5vw;
+    width: 95%;
+    height: fit-content;
+    background-color: var(--lilypad);
+    color: var(--blossom);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reviews {
+    margin: 2vw;
+    padding: 3.5vw;
+    width: 95%;
+    height: fit-content;
+    background-color: var(--lilypad);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.note {
+    margin-top: 1.5vw;
+    font-size: 1.5rem;
+}
+
+.info {
+    margin: 2vw;
+    padding: 1.5vw;
+    width: 95%;
+    height: fit-content;
+    background-color: var(--lilypad);
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.modes h3, .location h3 {
+    color: var(--koi-yellow);
+}
+
+.modes {
+    width: 49%;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location {
+    width: 49%;
+    padding: 0.5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,4 +174,8 @@ a {
     font-family: "Catboo", "Helvetica", sans-serif;
     font-size: 3.25rem;
     color: var(--koi-red);
+}
+
+#slogan {
+    margin-top: 1.5vh;
 }
