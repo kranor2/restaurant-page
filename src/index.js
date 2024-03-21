@@ -47,4 +47,34 @@ Socials.appendChild(Linkedin);
 
 Nav.appendChild(Socials);
 
+const Content = document.getElementById("content");
+
+const Hero = document.createElement("div");
+Hero.classList.add("hero");
+const heroHeadline = document.createElement("h1");
+heroHeadline.textContent += "Enjoy your favorite safe foods in a sensory-friendly and judgment free environment with Nigel and Applecat!";
+Hero.appendChild(heroHeadline);
+const heroSlogan = document.createElement("h2");
+heroSlogan.setAttribute("id", "slogan");
+heroSlogan.textContent += "Affordable and accessible meals for all ages!";
+Hero.appendChild(heroSlogan);
+
+Content.appendChild(Hero);
+
+const Yelp = document.createElement("div");
+Yelp.classList.add("reviews");
+const reviewsTitle = document.createElement("h3");
+reviewsTitle.textContent += "Reviews";
+Yelp.appendChild("reviewsTitle");
+const review1Body = document.createElement("p");
+review1Body.classList.add("note");
+review1Body.textContent += "All my favorite foods, off the kids menu! This is one restaurant that is an easy, safe space for me to eat, and I'll keep coming back. The dino nuggies are a personal favorite!";
+Yelp.appendChild("review1Body");
+const review1Quote = document.createElement("p");
+review1Quote.classList.add("note");
+review1Quote.textContent += "-kranor2";
+Yelp.appendChild("review1Quote");
+
+Content.appendChild(Yelp);
+
 console.log("webpack did the thing");
