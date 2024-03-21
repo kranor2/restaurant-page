@@ -97,6 +97,7 @@ p {
     width: 2.5vw;
     height: auto;
     margin: 5px;
+    cursor: pointer;
 }
 
 .hero {
