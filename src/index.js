@@ -65,15 +65,15 @@ const Yelp = document.createElement("div");
 Yelp.classList.add("reviews");
 const reviewsTitle = document.createElement("h3");
 reviewsTitle.textContent += "Reviews";
-Yelp.appendChild("reviewsTitle");
-const review1Body = document.createElement("p");
-review1Body.classList.add("note");
-review1Body.textContent += "All my favorite foods, off the kids menu! This is one restaurant that is an easy, safe space for me to eat, and I'll keep coming back. The dino nuggies are a personal favorite!";
-Yelp.appendChild("review1Body");
-const review1Quote = document.createElement("p");
-review1Quote.classList.add("note");
-review1Quote.textContent += "-kranor2";
-Yelp.appendChild("review1Quote");
+Yelp.appendChild(reviewsTitle);
+const reviewBody = document.createElement("p");
+reviewBody.classList.add("note");
+reviewBody.textContent += "All my favorite foods, off the kids menu! This is one restaurant that is an easy, safe space for me to eat, and I'll keep coming back. The dino nuggies are a personal favorite!";
+Yelp.appendChild(reviewBody);
+const reviewQuote = document.createElement("p");
+reviewQuote.classList.add("note");
+reviewQuote.textContent += "-kranor2";
+Yelp.appendChild(reviewQuote);
 
 Content.appendChild(Yelp);
 
