@@ -4,7 +4,7 @@
     --koi-gray: #c6d1bf;
     --koi-red-hover: #b42447;
     --koi-yellow: #cdaa16;
-    --lilypad: rgba(14, 109, 84, 0.3);
+    --lilypad: rgba(14, 109, 84, 0.37);
 }
 
 @font-face {
@@ -179,4 +179,9 @@ p {
 
 #slogan {
     margin-top: 1.5vh;
+}
+
+#hours {
+    margin-top: 1.5vw;
+    font-size: 1rem;
 }

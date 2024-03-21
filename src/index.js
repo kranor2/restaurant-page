@@ -77,4 +77,41 @@ Yelp.appendChild(reviewQuote);
 
 Content.appendChild(Yelp);
 
+const Info = document.createElement("div");
+Info.classList.add("info");
+
+const Modes = document.createElement("div");
+Modes.classList.add("modes");
+const modesTitle = document.createElement("h3");
+modesTitle.textContent += "Hours";
+Modes.appendChild(modesTitle);
+const modesHours = document.createElement("p");
+modesHours.setAttribute("id", "hours");
+modesHours.textContent += "Monday-Sunday: 12pm-12am";
+Modes.appendChild(modesHours);
+const modesNote = document.createElement("p");
+modesNote.classList.add("note");
+modesNote.textContent += "We also offer drive-thru, carry-out, and delivery!"
+Modes.appendChild(modesNote);
+
+Info.appendChild(Modes);
+
+const Location = document.createElement("div");
+Location.classList.add("location");
+const locationTitle = document.createElement("h3");
+locationTitle.textContent += "Location";
+Location.appendChild(locationTitle);
+const Address = document.createElement("p");
+Address.classList.add("note");
+Address.textContent += "1107 OhWyrm Drive";
+Location.appendChild(Address);
+const CityState = document.createElement("p");
+CityState.classList.add("note");
+CityState.textContent += "Dinosaur, Colorado";
+Location.appendChild(CityState);
+
+Info.appendChild(Location);
+
+Content.appendChild(Info);
+
 console.log("webpack did the thing");
