@@ -73,7 +73,7 @@ p {
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
     overflow: scroll;
-    justify-items: center;
+    justify-items: start;
     align-items: center;
 }
 
@@ -100,27 +100,13 @@ p {
     cursor: pointer;
 }
 
-.hero {
+.hero, .reviews, .menu-instructions, .entree-menu, .side-menu {
     margin: 2vw;
     padding: 3.5vw;
     width: 95%;
     height: fit-content;
     background-color: var(--lilypad);
     color: var(--blossom);
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.reviews {
-    margin: 2vw;
-    padding: 3.5vw;
-    width: 95%;
-    height: fit-content;
-    background-color: var(--lilypad);
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
@@ -171,6 +157,36 @@ p {
     text-align: center;
 }
 
+.entrees, .sides {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.entrees {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sides {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.example {
+    width: 15vw;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.item {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-items: center;
+}
+
 #logo-text {
     font-family: "Catboo", "Helvetica", sans-serif;
     font-size: 3.25rem;
@@ -184,4 +200,22 @@ p {
 #hours {
     margin-top: 1.5vw;
     font-size: 1rem;
+}
+
+#menuhead {
+    font-family: "Catboo";
+    color: var(--koi-red);
+}
+
+#directions {
+    margin-top: 1.5vw;
+}
+
+#asterisk {
+    font-size: 1rem;
+    align-self: end;
+}
+
+#item-name {
+    align-self: start;
 }
