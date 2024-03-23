@@ -128,8 +128,6 @@ Info.appendChild(Location);
 
 Content.appendChild(Info);
 
-console.log("webpack did the thing");
-
 const Home = document.getElementById("home");
 Home.addEventListener("click", function() {
     Content.innerHTML = "";
