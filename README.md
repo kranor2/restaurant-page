@@ -1,6 +1,9 @@
 # restaurant-page
 
 ## Description
+This is my fifth project within the Full Stack JavaScript course from The Odin Project, continuing my coursework within the JavaScript chapter of the course. In this prompt response, I have built a website representing a fictional restaurant called Comfy Munchies. In this project, I've implemented new skills using webpack; in order to do this, nearly the whole DOM is built using JS DOM Manipulation techniques. The different pages are built and transitioned between using tab-switching logic in JS. This was a great project, both to hone new skills and check in on my knowledge with learned skills and research.
+
+I chose, as I have in previous projects and will continue to do in future projects, to style this project using both previously learned and new CSS skills. In this case, the main new skill practiced was using the webpack config file to ensure that assets used in the CSS and the JS-constructed DOM are imported and parsed properly.
 
 ## Thanks
 [Concept created in collaboration w/ @goodappleboy and their beloved Applecat](https://www.twitch.tv/goodappleboy)
