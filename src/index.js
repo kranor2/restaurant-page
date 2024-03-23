@@ -14,6 +14,10 @@ import CheeseSticks from "./cheese-sticks.png";
 import Apples from "./apples.png";
 import Carrots from "./carrots.png";
 import GreenBeans from "./greenbeans.png";
+import Applecat from "./applecat.PNG";
+import Nigel from "./nigel.png"
+import AppleBoy from "./goodappleboy.jpg";
+import North from "./rdcnorth.jpg";
 
 const Nav = document.querySelector("nav");
 const Socials = document.createElement("div");
@@ -324,4 +328,137 @@ Menu.addEventListener("click", function() {
 
     menuSides.appendChild(Sides);
     Content.appendChild(menuSides);
+});
+
+const About = document.getElementById("about");
+About.addEventListener("click", function(){
+    Content.innerHTML = "";
+
+    const aboutHero = document.createElement("div");
+    aboutHero.classList.add("hero");
+    const heroSection = document.createElement("div");
+    heroSection.classList.add("section");
+    const welcome = document.createElement("h2");
+    welcome.textContent += "Welcome to";
+    heroSection.appendChild(welcome);
+    const miniLogo = document.createElement("h1");
+    miniLogo.classList.add("logomini");
+    miniLogo.setAttribute("id", "menuhead");
+    miniLogo.textContent += "Comfy Munchies";
+    heroSection.appendChild(miniLogo);
+    const author = document.createElement("h2");
+    author.textContent += "a restaurant by Nigel & Applecat";
+    heroSection.appendChild(author);
+    aboutHero.appendChild(heroSection);
+
+    const heroDesc = document.createElement("div");
+    heroDesc.setAttribute("id", "desc");
+    const descPara1 = document.createElement("p");
+    descPara1.textContent += "Our humans are very good at making our homes comfy, cozy, low-demand, and safe for themselves and for us, and they take good care of us and give us good foods! But they often spend lots of time at home, and like many neurospicy humans, they don’t get many opportunities to go out for food that don’t require lots of rest, recovery, and healing afterward. Humans need spaces where they feel safe to enjoy safe and yummy foods! So we decided to give our humans a safe space to eat all of their favorite safe foods!";
+    heroDesc.appendChild(descPara1);
+    const descPara2 = document.createElement("p");
+    descPara2.textContent += "Comfy Munchies provides a menu filled with common favorites among sensory-friendly safe foods for neurospicy people of all ages! We are a safe space free of judgment, infantilization, and discrimination. This is your space, your food, and your experience, and we hope you love every minute of it!";
+    heroDesc.appendChild(descPara2);
+    const descImportant = document.createElement("p");
+    descImportant.setAttribute("id", "important");
+    descImportant.textContent += "In addition to a menu that is full of common safe neurospicy safe foods, you can customize the sensory space at your table! Each table is enclosed in a sheltered, soundproof booth, with multiple options for: ";
+    heroDesc.appendChild(descImportant);
+    const descList = document.createElement("ul");
+    descList.setAttribute("id", "important");
+    const descItem1 = document.createElement("li");
+    descItem1.textContet += "Seating";
+    descList.appendChild(descItem1);
+    const descItem2 = document.createElement("li");
+    descItem2.textContent += "Lighting";
+    descList.appendChild(descItem2);
+    const descItem3 = document.createElement("li");
+    descItem3.textContent += "Music/Ambient Sound";
+    descList.appendChild(descItem3);
+    const descItem4 = document.createElement("li");
+    descItem4.textContent += "Flatware & dishes";
+    descList.appendChild(descItem4);
+    const descItem5 = document.createElement("li");
+    descItem5.textContent = "Heating and air conditioning settings";
+    descList.appendChild(descItem5);
+    heroDesc.appendChild(descList);
+    const descPara3 = document.createElement("p");
+    descPara3.textContent += "In your reservation, please let us know if you have any food allergies, texture or flavor sensitivities, or other sensory concerns. We’ll do our best to accommodate your needs as completely as possible, ensuring you as safe and positive experience as we can!";
+    heroDesc.appendChild(descPara3);
+    const descPara4 = document.createElement("p");
+    descPara4.textContent += "P.S. Check us out (and our humans) down below!";
+    heroDesc.appendChild(descPara4);
+    aboutHero.appendChild(heroDesc);
+    Content.appendChild(aboutHero);
+
+    const Bios = document.createElement("div");
+    Bios.setAttribute("id", "bios");
+    const cat = document.createElement("div");
+    cat.classList.add("headshot");
+    const catName = document.createElement("p");
+    catName.classList.add("note");
+    catName.setAttribute("id", "item-name");
+    catName.textContent += "Applecat";
+    cat.appendChild(catName);
+    const catPic = document.createElement("img");
+    catPic.classList.add("friend");
+    catPic.src = Applecat;
+    cat.appendChild(catPic);
+    const catPronouns = document.createElement("p");
+    catPronouns.setAttribute("id", "asterisk");
+    catPronouns.textContent += "Pronouns: any!";
+    cat.appendChild(catPronouns);
+    Bios.appendChild(cat);
+
+    const dog = document.createElement("div");
+    dog.classList.add("headshot");
+    const dogName = document.createElement("p");
+    dogName.classList.add("note");
+    dogName.setAttribute("id", "item-name");
+    dogName.textContent += "Nigel";
+    dog.appendChild(dogName);
+    const dogPic = document.createElement("img");
+    dogPic.classList.add("friend");
+    dogPic.src = Nigel;
+    dog.appendChild(dogPic);
+    const dogPronouns = document.createElement("p");
+    dogPronouns.setAttribute("id", "asterisk");
+    dogPronouns.textContent += "Pronouns: he/him/his";
+    dog.appendChild(dogPronouns);
+    Bios.appendChild(dog);
+
+    const gab = document.createElement("div");
+    gab.classList.add("headshot");
+    const gabName = document.createElement("p");
+    gabName.classList.add("note");
+    gabName.setAttribute("id", "item-name");
+    gabName.textContent += "goodappleboy";
+    gab.appendChild(gabName);
+    const gabPic = document.createElement("img");
+    gabPic.classList.add("friend");
+    gabPic.src = AppleBoy;
+    gab.appendChild(gabPic);
+    const gabPronouns = document.createElement("p");
+    gabPronouns.setAttribute("id", "asterisk");
+    gabPronouns.textContent += "Pronouns: they/them/theirs";
+    gab.appendChild(gabPronouns);
+    Bios.appendChild(gab);
+
+    const rdc = document.createElement("div");
+    rdc.classList.add("headshot");
+    const rdcName = document.createElement("p");
+    rdcName.classList.add("note");
+    rdcName.setAttribute("id", "item-name");
+    rdcName.textContent += "Rhett North";
+    rdc.appendChild(rdcName);
+    const rdcPic = document.createElement("img");
+    rdcPic.classList.add("friend");
+    rdcPic.src = North;
+    rdc.appendChild(rdcPic);
+    const rdcPronouns = document.createElement("p");
+    rdcPronouns.setAttribute("id", "asterisk");
+    rdcPronouns.textContent += "Pronouns: he/him/his";
+    rdc.appendChild(rdcPronouns);
+    Bios.appendChild(rdc);
+
+    Content.appendChild(Bios);
 })

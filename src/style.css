@@ -49,7 +49,7 @@ nav {
     align-items: center;
 }
 
-h1, h2, p, button {
+h1, h2, p, button, li {
     font-family: "CreamDEMO", "Trebuchet MS", sans-serif;
 }
 
@@ -67,6 +67,12 @@ a {
 
 p {
     color: var(--blossom);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .content {
@@ -104,7 +110,7 @@ p {
     margin: 2vw;
     padding: 3.5vw;
     width: 95%;
-    height: fit-content;
+    min-height: fit-content;
     background-color: var(--lilypad);
     color: var(--blossom);
     border-radius: 3rem;
@@ -187,6 +193,38 @@ p {
     justify-items: center;
 }
 
+.section {
+    height: 15vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.logomini {
+    font-size: 2.5rem;
+}
+
+.headshot {
+    margin: 0.5vw;
+    padding: 0.75vw;
+    width: 20vw;
+    height: 50vh;
+    background-color: var(--lilypad);
+    border-radius: 3rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.friend {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+    justify-self: center;
+}
+
 #logo-text {
     font-family: "Catboo", "Helvetica", sans-serif;
     font-size: 3.25rem;
@@ -218,4 +256,26 @@ p {
 
 #item-name {
     align-self: start;
+}
+
+#desc {
+    text-align: start;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#important {
+    text-align: center;
+}
+
+#bios {
+    margin: 2vw;
+    padding: 3.5vw;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
 }
